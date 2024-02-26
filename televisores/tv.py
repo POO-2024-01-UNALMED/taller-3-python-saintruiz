@@ -1,6 +1,3 @@
-from marca import Marca
-from control import Control
-
 class TV:
     #propiedades iniciales de cada televisor
     numTV=0
@@ -22,7 +19,7 @@ class TV:
 
     def setMarca(self, marca) -> None:
         self.__marca=marca
-    def getMarca(self) -> Marca:
+    def getMarca(self):
         return self.__marca
 
 
@@ -61,7 +58,7 @@ class TV:
 
     def setControl(self, control) -> None:
         self.__control=control
-    def getControl(self) -> Control:
+    def getControl(self):
         return self.__control
     
     def turnOn(self) -> None:
