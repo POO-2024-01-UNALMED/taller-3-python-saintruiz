@@ -1,3 +1,4 @@
+from tv import TV
 class Control:
     def enlazar(self, tv) -> None:
         self.__tv=tv
@@ -5,7 +6,7 @@ class Control:
 
     def setTv(self, tv) -> None:
         self.enlazar(tv)
-    def getTv(self):
+    def getTv(self) -> TV:
         return self.__tv
     
     
