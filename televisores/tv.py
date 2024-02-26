@@ -10,11 +10,12 @@ class TV:
         self.__precio=500
         TV.numTV+=1
 
-
-    def setNumTV(int) -> None:
-        TV.numTV=int
-    def getNumTV() -> int:
-        return TV.numTV
+    @classmethod
+    def setNumTV(cls, num) -> None:
+        cls.numTV=num
+    @classmethod
+    def getNumTV(cls) -> int:
+        return cls.numTV
 
 
     def setMarca(self, marca) -> None:
@@ -24,7 +25,7 @@ class TV:
 
 
     def setCanal(self, canal) -> None :
-        if  self.__estado== True and canal>=1 and canal<=120:
+        if  self.__estado == True and canal>=1 and canal<=120:
             self.__canal=canal
     def getCanal(self) -> int:
         return self.__canal
