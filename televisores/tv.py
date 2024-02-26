@@ -1,13 +1,13 @@
 class TV:
     #propiedades iniciales de cada televisor
-    canal=1
-    volumen=1
-    precio=500
     numTV=0
 
     def __init__(self, marca, estado) -> None:
         self.__marca=marca
         self.__estado=estado
+        self.__canal=1
+        self.__volumen=1
+        self.__precio=500
         TV.numTV+=1
 
 
